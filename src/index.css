@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets/image/low_poly_banner_design_1711.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+#root {
+  height: 100vh !important;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.active {
+  color: blue;
+}
+
+.debts .lend .active i {
+  background: red !important;
+}
+.debts .lend .active p,
+.debts .borrow .active p {
+  color: rgb(65, 64, 64) !important;
+}
+.debts .borrow .active i {
+  background: rgb(7, 197, 7) !important;
+}
+.transactions .income .active i {
+  background: rgb(7, 197, 7) !important;
+}
+.transactions .income .active p {
+  color: rgb(65, 64, 64) !important;
+}
+.transactions .expenses .active p {
+  color: rgb(65, 64, 64) !important;
+}
+.transactions .expenses .active i {
+  background: red !important;
+}
+
+circle,
+circle ~ text {
+  display: none;
+}
